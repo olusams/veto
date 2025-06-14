@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./scss/index.scss";
 import { Poppins, Open_Sans } from "next/font/google";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -66,6 +67,9 @@ export default function RootLayout({ children }) {
         <CustomCursor />
         {children}
         <Footer />
+        {/* Elfsight All-in-One Chat | Remlyx chat wodget 1 */}
+        <Script src="https://static.elfsight.com/platform/platform.js" strategy="lazyOnload" />
+        <div className="elfsight-app-5725131f-b459-496b-8857-fe8f32a3a247" data-elfsight-app-lazy></div>
       </body>
     </html>
   );
