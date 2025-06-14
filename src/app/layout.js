@@ -1,4 +1,3 @@
-"use client";
 import Header from "@/app/ui/Header";
 import CustomCursor from "@/app/ui/CustomCursor";
 import Footer from "@/app/ui/Footer";
@@ -18,15 +17,51 @@ const openSans = Open_Sans({
   variable: "--secondary-font",
 });
 
+export const metadata = {
+  title: 'Web Designer & Developer in Leeds, West Yorkshire | Remlyx',
+  description:
+    'Professional web designer and developer in Leeds, helping businesses across West Yorkshire with bespoke websites and SEO. Contact Remlyx for a free quote.',
+  keywords:
+    'web designer leeds, web developer leeds, web design west yorkshire, freelance web developer leeds, wordpress developer leeds, small business web design leeds',
+  author: 'Remlyx',
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Remlyx',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Highfield crescent',
+    addressLocality: 'Leeds',
+    addressRegion: 'West Yorkshire',
+    postalCode: 'LS12 4DA',
+    addressCountry: 'UK',
+  },
+  telephone: '07448429748',
+  url: 'https://www.remlyx.com',
+  description:
+    'Professional web designer and developer based in Leeds, serving small and medium businesses across West Yorkshire.',
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Leeds',
+    },
+    {
+      '@type': 'AdministrativeArea',
+      name: 'West Yorkshire',
+    },
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="author" content="Laralink" />
-        <link rel="icon" href="/images/favicon.ico" sizes="any" />
-        <title>Arino Creative Agency Next JS Template</title>
-      </head>
       <body className={`${openSans.variable} ${poppins.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Header />
         <CustomCursor />
         {children}

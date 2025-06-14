@@ -12,7 +12,7 @@ export default function ServicesPage() {
   return (
     <>
       <PageHeading 
-        title='Services'
+        title='Our Services'
         bgSrc='/images/service_hero_bg.jpeg'
         pageLinkText='Services'
       />
@@ -24,8 +24,8 @@ export default function ServicesPage() {
           <Div className="row">
             <Div className="col-xl-4">
               <SectionHeading
-                title='Services we can help you with' 
-                subtitle='What Can We Do'
+                title='Web Design in West Yorkshire' 
+                subtitle='Our Services'
               />
               <Spacing lg='90' md='45'/>
             </Div>
@@ -34,39 +34,39 @@ export default function ServicesPage() {
                 <Div className='col-lg-3 col-sm-6 cs-hidden_mobile'></Div>
                 <Div className='col-lg-3 col-sm-6'>
                   <Card
-                    title='UI/UX design'
-                    link='/service/ui-ux-design'
+                    title='Bespoke Web Design'
+                    link='/service/service-details'
                     src='/images/service_1.jpeg'
-                    alt='Service'
+                    alt='Bespoke Web Design for Leeds Businesses'
                   />
                   <Spacing lg='0' md='30'/>
                 </Div>
                 <Div className='col-lg-3 col-sm-6 cs-hidden_mobile'></Div>
                 <Div className='col-lg-3 col-sm-6'>
                   <Card
-                    title='React.js Development'
-                    link='/service/reactjs-development'
+                    title='Mobile App Development'
+                    link='/service/service-details'
                     src='/images/service_2.jpeg'
-                    alt='Service'
+                    alt='Mobile App Development for West Yorkshire'
                   />
                   <Spacing lg='0' md='30'/>
                 </Div>
                 <Div className='col-lg-3 col-sm-6'>
                   <Card
-                    title='Digital Marketing'
-                    link='/service/digital-marketing'
+                    title='SEO for West Yorkshire'
+                    link='/service/service-details'
                     src='/images/service_3.jpeg'
-                    alt='Service'
+                    alt='SEO for businesses in West Yorkshire'
                   />
                   <Spacing lg='0' md='30'/>
                 </Div>
                 <Div className='col-lg-3 col-sm-6 cs-hidden_mobile'></Div>
                 <Div className='col-lg-3 col-sm-6'>
                   <Card
-                    title='Technology'
-                    link='/service/technology'
+                    title='Support & Maintenance'
+                    link='/service/service-details'
                     src='/images/service_4.jpeg'
-                    alt='Service'
+                    alt='Website Support and Maintenance'
                   />
                   <Spacing lg='0' md='30'/>
                 </Div>
@@ -74,20 +74,20 @@ export default function ServicesPage() {
                 <Div className='col-lg-3 col-sm-6 cs-hidden_mobile'></Div>
                 <Div className='col-lg-3 col-sm-6'>
                   <Card
-                    title='Consultancy'
-                    link='/service/consultancy'
+                    title='E-commerce for Small Business'
+                    link='/service/service-details'
                     src='/images/service_5.jpeg'
-                    alt='Service'
+                    alt='E-commerce solutions for small businesses'
                   />
                   <Spacing lg='0' md='30'/>
                 </Div>
                 <Div className='col-lg-3 col-sm-6 cs-hidden_mobile'></Div>
                 <Div className='col-lg-3 col-sm-6'>
                   <Card
-                    title='Creative Design'
-                    link='/service/creative-design'
+                    title='UI/UX Design for Startups'
+                    link='/service/service-details'
                     src='/images/service_6.jpeg'
-                    alt='Service'
+                    alt='UI/UX Design for Startups'
                   />
                   <Spacing lg='0' md='30'/>
                 </Div>
@@ -99,21 +99,19 @@ export default function ServicesPage() {
       <Spacing lg='150' md='80'/>
       <Div className="container">
         <SectionHeading
-          title='Providing best <br/>pricing for client' 
+          title='Transparent Pricing for Exceptional Value' 
           subtitle='Pricing & Packaging'
         />
         <Spacing lg='85' md='40'/>
         <PricingTableList/>
       </Div>
-      <Spacing lg='125' md='55'/>
-      <TestimonialSlider/>
       <Spacing lg='150' md='80'/>
       <Div className="container">
         <Cta 
-          title='Let’s disscuse make <br />something <i>cool</i> together' 
-          btnText='Apply For Meeting' 
-          btnLink='/contact' 
-          bgSrc='/images/cta_bg.jpeg'
+          title="Let's Build Something Remarkable Together"
+          btnText='Get a Free Quote'
+          btnLink='/contact'
+          bgSrc='/images/funfact_bg.jpeg'
         />
       </Div>
     </>

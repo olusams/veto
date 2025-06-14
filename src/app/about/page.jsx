@@ -12,25 +12,22 @@ import aboutImg2 from '../../../public/images/about_img_2.jpeg'
 import aboutImg3 from '../../../public/images/about_img_3.jpeg'
 import aboutImg4 from '../../../public/images/about_img_4.jpeg'
 
-
-
-
 const funfaceData = [
   {
-    title: 'Global Happy Clients',
-    factNumber: '40K',
+    title: 'Affordable Projects',
+    factNumber: '500+',
   },
   {
-    title: 'Project Completed',
-    factNumber: '50K',
+    title: 'Local Leeds Clients',
+    factNumber: '98%',
   },
   {
-    title: 'Team Members',
-    factNumber: '245',
+    title: 'Years In Business',
+    factNumber: '12+',
   },
   {
-    title: 'Digital products',
-    factNumber: '550',
+    title: 'Client ROI',
+    factNumber: '33x',
   },
 ];
 
@@ -51,16 +48,12 @@ export default function AboutPage() {
         <Div className="row">
           <Div className="col-xl-5 col-lg-7">
             <SectionHeading
-              title="Your trusted partner for business"
-              subtitle="About Our Agency"
+              title="Your Local Web Designer in Leeds"
+              subtitle="About Remlyx"
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+                As a leading web developer in Leeds, we are a passionate team dedicated to helping businesses across West Yorkshire thrive online. We blend creative design with the latest technology to build websites that are not only visually stunning but also drive tangible results.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
@@ -99,8 +92,8 @@ export default function AboutPage() {
       {/* Start Fun Fact Section */}
       <Div className="container">
         <FunFact
-          title="Our fun fact"
-          subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+          title="Proven Results"
+          subtitle="We merge creative innovation with technical mastery to build captivating digital experiences that convert. Our track record speaks for itself."
           data={funfaceData}
         />
       </Div>
@@ -124,23 +117,16 @@ export default function AboutPage() {
           </Div>
           <Div className="col-xl-5 offset-xl-1 col-lg-6">
             <SectionHeading
-              title="Highly experienced pepole with us"
+              title="A Creative & Technical Powerhouse"
               subtitle="Why Choose Us"
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+                Our team consists of expert web designers, developers, and strategists, all committed to your success. We build long-term partnerships with our clients in Leeds and West Yorkshire, providing the support and expertise you need to grow your business.
               </p>
               <Spacing lg="15" md="15" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining.
+                We specialize in creating high-quality, affordable websites tailored to your unique needs. As your local web developer, we're dedicated to delivering excellence from start to finish.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
@@ -155,7 +141,7 @@ export default function AboutPage() {
       <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading
-          title="Awesome team <br/>members"
+          title="The Experts Behind Our Success"
           subtitle="Our Team"
           variant="cs-style1"
         />
@@ -168,10 +154,10 @@ export default function AboutPage() {
       <Spacing lg="150" md="80" />
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
+          title="Ready to Start Your Project?"
+          btnText="Get a Free Quote"
           btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
+          bgSrc="/images/funfact_bg.jpeg"
         />
       </Div>
       {/* End CTA Section */}

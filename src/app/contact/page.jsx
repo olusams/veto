@@ -19,8 +19,8 @@ export default function ContactPage() {
         <Div className="row">
           <Div className="col-lg-6">
             <SectionHeading
-              title="Do you have a project <br/>in your mind?"
-              subtitle="Getting Touch"
+              title="Let's Forge Your Digital Success Story"
+              subtitle="Get in Touch"
             />
             <Spacing lg="55" md="30" />
             <ContactInfoWidget withIcon />
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-12">
-                <label className="cs-primary_color">Mobile*</label>
+                <label className="cs-primary_color">Message*</label>
                 <textarea
                   cols="30"
                   rows="7"
@@ -70,9 +70,10 @@ export default function ContactPage() {
       <Spacing lg="150" md="80" />
       <Div className="cs-google_map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96652.27317354927!2d-74.33557928194516!3d40.79756494697628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a82f1352d0dd%3A0x81d4f72c4435aab5!2sTroy+Meadows+Wetlands!5e0!3m2!1sen!2sbd!4v1563075599994!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.632190172667!2d-1.5921827841446698!3d53.795276980075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795e0d16c27e8d%3A0x24ec042e979d36e8!2sHighfield%20Cres%2C%20Leeds%20LS12%204DA!5e0!3m2!1sen!2suk!4v1678253803378!5m2!1sen!2suk"
           allowFullScreen
           title="Google Map"
+          style={{ filter: 'grayscale(0.6) invert(1) contrast(1.2) hue-rotate(200deg) saturate(0.5) brightness(0.9)' }}
         />
       </Div>
       <Spacing lg="50" md="40" />

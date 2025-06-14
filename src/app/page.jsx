@@ -1,19 +1,31 @@
 'use client';
+import { useState } from 'react';
+import Image from "next/image";
+import { Icon } from "@iconify/react";
+
 import Cta from '@/app/ui/Cta';
 import Div from '@/app/ui/Div';
 import FunFact from '@/app/ui/FunFact';
 import Hero from '@/app/ui/Hero';
-import LogoList from '@/app/ui/LogoList';
-import MovingText from '@/app/ui/MovingText';
 import SectionHeading from '@/app/ui/SectionHeading';
-import PortfolioSlider from '@/app/ui/Slider/PortfolioSlider';
-import PostSlider from '@/app/ui/Slider/PostSlider';
-import TeamSlider from '@/app/ui/Slider/TeamSlider';
-import TestimonialSlider from '@/app/ui/Slider/TestimonialSlider';
-import TimelineSlider from '@/app/ui/Slider/TimelineSlider';
 import Spacing from '@/app/ui/Spacing';
-import VideoModal from '@/app/ui/VideoModal';
 import Card from './ui/Card';
+import PricingTableList from "@/app/ui/PricingTable/PricingTableList";
+import TestimonialSlider from "@/app/ui/Slider/TestimonialSlider";
+import Portfolio from "@/app/ui/Portfolio";
+import Pagination from "@/app/ui/Pagination";
+import PostStyle2 from "@/app/ui/Post/PostStyle2";
+import Sidebar from "@/app/ui/Sidebar.jsx/index.jsx";
+import ContactInfoWidget from "@/app/ui/Widget/ContactInfoWidget";
+import TeamSlider from '@/app/ui/Slider/TeamSlider';
+import PortfolioSlider from "@/app/ui/Slider/PortfolioSlider";
+import VideoModal from "@/app/ui/VideoModal";
+
+import aboutImg from '../../public/images/about_img_1.jpeg'
+import aboutImg2 from '../../public/images/about_img_2.jpeg'
+import aboutImg3 from '../../public/images/about_img_3.jpeg'
+import aboutImg4 from '../../public/images/about_img_4.jpeg'
+
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -29,20 +41,20 @@ const heroSocialLinks = [
 // FunFact Data
 const funfaceData = [
   {
-    title: 'Global Happy Clients',
-    factNumber: '40K',
+    title: 'Affordable Projects',
+    factNumber: '500+',
   },
   {
-    title: 'Project Completed',
-    factNumber: '50K',
+    title: 'Local Leeds Clients',
+    factNumber: '98%',
   },
   {
-    title: 'Team Members',
-    factNumber: '245',
+    title: 'Years In Business',
+    factNumber: '12+',
   },
   {
-    title: 'Digital products',
-    factNumber: '550',
+    title: 'Client ROI',
+    factNumber: '33x',
   },
 ];
 // Portfolio Data
@@ -51,36 +63,136 @@ const portfolioData = [
     title: 'Colorful Art Work',
     subtitle: 'See Details',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_1.jpeg',
+    src: '/images/portfolio_4.jpeg',
+    category: 'ui_ux_design',
   },
   {
     title: 'Colorful Art Work',
     subtitle: 'See Details',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_2.jpeg',
+    src: '/images/portfolio_5.jpeg',
+    category: 'logo_design',
   },
   {
     title: 'Colorful Art Work',
     subtitle: 'See Details',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_0.jpg',
+    src: '/images/portfolio_6.jpeg',
+    category: 'web_design',
   },
   {
     title: 'Colorful Art Work',
     subtitle: 'See Details',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_3.jpeg',
+    src: '/images/portfolio_7.jpeg',
+    category: 'mobile_apps',
+  },
+  {
+    title: 'Colorful Art Work',
+    subtitle: 'See Details',
+    href: '/portfolio/portfolio-details',
+    src: '/images/portfolio_8.jpeg',
+    category: 'ui_ux_design',
+  },
+  {
+    title: 'Colorful Art Work',
+    subtitle: 'See Details',
+    href: '/portfolio/portfolio-details',
+    src: '/images/portfolio_9.jpeg',
+    category: 'web_design',
+  },
+  {
+    title: 'Colorful Art Work',
+    subtitle: 'See Details',
+    href: '/portfolio/portfolio-details',
+    src: '/images/portfolio_10.jpeg',
+    category: 'logo_design',
+  },
+  {
+    title: 'Colorful Art Work',
+    subtitle: 'See Details',
+    href: '/portfolio/portfolio-details',
+    src: '/images/portfolio_4.jpeg',
+    category: 'ui_ux_design',
+  },
+  {
+    title: 'Colorful Art Work',
+    subtitle: 'See Details',
+    href: '/portfolio/portfolio-details',
+    src: '/images/portfolio_5.jpeg',
+    category: 'logo_design',
+  },
+  {
+    title: 'Colorful Art Work',
+    subtitle: 'See Details',
+    href: '/portfolio/portfolio-details',
+    src: '/images/portfolio_6.jpeg',
+    category: 'web_design',
+  },
+];
+const categoryMenu = [
+  {
+    title: 'Web Design',
+    category: 'web_design',
+  },
+  {
+    title: 'UI/UX Design',
+    category: 'ui_ux_design',
+  },
+  {
+    title: 'Mobile Apps',
+    category: 'mobile_apps',
+  },
+  {
+    title: 'Logo Design',
+    category: 'logo_design',
   },
 ];
 
+const postData = [
+  {
+    thumb: '/images/post_4.jpeg',
+    title: 'A.I will take all human job within next year',
+    subtitle:
+      'Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.',
+    date: '07 Mar 2022',
+    category: 'Tech',
+    categoryHref: '/blog',
+    href: '/blog/blog-details',
+  },
+  {
+    thumb: '/images/post_5.jpeg',
+    title: 'Creative studio programm coming soon',
+    subtitle:
+      'Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.',
+    date: '05 Mar 2022',
+    category: 'Photography',
+    categoryHref: '/blog',
+    href: '/blog/blog-details',
+  },
+  {
+    thumb: '/images/post_6.jpeg',
+    title: 'Artistic mind will be great for creation',
+    subtitle:
+      'Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.',
+    date: '04 Mar 2022',
+    category: 'Tech',
+    categoryHref: '/blog',
+    href: '/blog/blog-details',
+  },
+];
+
+
 export default function Home() {
+  const [active, setActive] = useState('all');
+  const [itemShow, setItemShow] = useState(7);
   return (
     <>
       {/* Start Hero Section */}
       <Hero
-        title="Creativity In <br/>Our Blood Line"
-        subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
-        btnText="Get a Quote"
+        title="Expert Web Designer & Developer in Leeds"
+        subtitle="Creating professional, high-performance websites for businesses across West Yorkshire. Let's build your online presence together."
+        btnText="Get a Free Quote"
         btnLink="/contact"
         scrollDownId="#service"
         socialLinksHeading="Follow Us"
@@ -93,22 +205,21 @@ export default function Home() {
       <div className="container">
         <FunFact
           variant="cs-type1"
-          title="Our fun fact"
-          subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+          title="Proven Results"
+          subtitle="We merge creative innovation with technical mastery to build captivating digital experiences that convert. Our track record speaks for itself."
           data={funfaceData}
         />
       </div>
       {/* End FunFact Section */}
 
       {/* Start Service Section */}
-      <Spacing lg="150" md="80" />
       <Div id="service">
         <Div className="container">
           <Div className="row">
             <Div className="col-xl-4">
               <SectionHeading
-                title="Services we can help you with"
-                subtitle="What Can We Do"
+                title="Our Expertise, Your Advantage"
+                subtitle="What We Do"
                 btnText="See All Services"
                 btnLink="/service"
               />
@@ -119,7 +230,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="UI/UX design"
+                    title="Bespoke Web Development"
                     link="/service/service-details"
                     src="/images/service_1.jpeg"
                     alt="Service"
@@ -129,7 +240,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="React.js Development"
+                    title="Mobile App Development"
                     link="/service/service-details"
                     src="/images/service_2.jpeg"
                     alt="Service"
@@ -138,7 +249,7 @@ export default function Home() {
                 </Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Digital Marketing"
+                    title="SEO & Digital Solutions"
                     link="/service/service-details"
                     src="/images/service_3.jpeg"
                     alt="Service"
@@ -148,7 +259,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Technology"
+                    title="Ongoing Support"
                     link="/service/service-details"
                     src="/images/service_4.jpeg"
                     alt="Service"
@@ -165,42 +276,20 @@ export default function Home() {
 
       {/* Start Portfolio Section */}
       <Spacing lg="150" md="50" />
-      <Div>
+      <Div id="works">
         <Div className="container">
           <SectionHeading
-            title="Portfolio to explore"
-            subtitle="Latest Projects"
+            title="Featured Projects"
+            subtitle="Our Work"
             variant="cs-style1 text-center"
           />
           <Spacing lg="90" md="45" />
         </Div>
-        <PortfolioSlider data={portfolioData} />
+        <Div>
+          <PortfolioSlider data={portfolioData} />
+        </Div>
       </Div>
       {/* End Portfolio Section */}
-
-      {/* Start Awards Section */}
-      <Spacing lg="150" md="80" />
-      <Div className="cs-shape_wrap_2">
-        <Div className="cs-shape_2">
-          <Div />
-        </Div>
-        <Div className="container">
-          <Div className="row">
-            <Div className="col-xl-4">
-              <SectionHeading
-                title="We get multiple awards"
-                subtitle="Our Awards"
-                variant="cs-style1"
-              />
-              <Spacing lg="90" md="45" />
-            </Div>
-            <Div className="col-xl-7 offset-xl-1">
-              <TimelineSlider />
-            </Div>
-          </Div>
-        </Div>
-      </Div>
-      {/* End Awards Section */}
 
       {/* Start Video Block Section */}
       <Spacing lg="130" md="70" />
@@ -231,54 +320,12 @@ export default function Home() {
       <Spacing lg="150" md="80" />
       {/* End Team Section */}
 
-      {/* Start Testimonial Section */}
-      <TestimonialSlider />
-      {/* End Testimonial Section */}
-
-      {/* Start Blog Section */}
-      <Spacing lg="150" md="80" />
-      <Div className="cs-shape_wrap_4">
-        <Div className="cs-shape_4"></Div>
-        <Div className="cs-shape_4"></Div>
-        <Div className="container">
-          <Div className="row">
-            <Div className="col-xl-4">
-              <SectionHeading
-                title="Explore recent publication"
-                subtitle="Our Blog"
-                btnText="View More Blog"
-                btnLink="/blog"
-              />
-              <Spacing lg="90" md="45" />
-            </Div>
-            <Div className="col-xl-7 offset-xl-1">
-              <Div className="cs-half_of_full_width">
-                <PostSlider />
-              </Div>
-            </Div>
-          </Div>
-        </Div>
-      </Div>
-      {/* End Blog Section */}
-
-      {/* Start MovingText Section */}
-      <Spacing lg="125" md="70" />
-      <MovingText text="Our reputed world wide partners" />
-      <Spacing lg="105" md="70" />
-      {/* End MovingText Section */}
-
-      {/* Start LogoList Section */}
-      <Div className="container">
-        <LogoList />
-      </Div>
-      <Spacing lg="150" md="80" />
-      {/* End LogoList Section */}
-
       {/* Start CTA Section */}
+      <Spacing lg="150" md="80" />
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
+          title="Ready to Start Your Project?"
+          btnText="Get a Free Quote"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />

@@ -16,7 +16,7 @@ const teamData = [
     },
   },
   {
-    memberImage: '/images/member_2.jpeg',
+    memberImage: '/images/testimonial_2.jpeg',
     memberName: 'Olinaz Fushi',
     memberDesignation: 'Product Designer',
     memberSocial: {
@@ -38,7 +38,7 @@ const teamData = [
     },
   },
   {
-    memberImage: '/images/member_4.jpeg',
+    memberImage: '/images/about_img_4.jpeg',
     memberName: 'Melina Opole',
     memberDesignation: 'WP Developer',
     memberSocial: {
@@ -49,7 +49,7 @@ const teamData = [
     },
   },
   {
-    memberImage: '/images/member_1.jpeg',
+    memberImage: '/images/testimonial_3.jpeg',
     memberName: 'Melon Bulgery',
     memberDesignation: 'Product Designer',
     memberSocial: {

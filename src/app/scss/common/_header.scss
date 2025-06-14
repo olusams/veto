@@ -1,3 +1,10 @@
+.cs-site-branding {
+  display: inline-block;
+  max-width: 150px;
+  @media screen and (min-width: 1200px) {
+    max-width: 180px;
+  }
+}
 .cs-site_header {
   position: relative;
   z-index: 101;
@@ -6,10 +13,6 @@
   }
 }
 
-.cs-site-branding {
-  display: inline-block;
-  max-width: 180px;
-}
 .cs-site_header {
   position: absolute;
   width: 100%;
@@ -298,7 +301,7 @@
 //   opacity: 1;
 // }
 
-.cs-site_branding {
+.cs-site-branding {
   display: inline-block;
   img {
     max-height: 45px;

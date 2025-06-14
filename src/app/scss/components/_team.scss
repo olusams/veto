@@ -6,8 +6,11 @@
     position: relative;
     overflow: inherit;
     overflow: hidden;
+    height: 435px;
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
       position: relative;
       z-index: 1;
       border-radius: inherit;

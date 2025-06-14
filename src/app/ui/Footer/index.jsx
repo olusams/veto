@@ -47,9 +47,9 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
             <Div className="col-lg-3 col-sm-6">
               <Div className="cs-footer_item">
                 <TextWidget
-                  logoSrc="/images/footer_logo.svg"
-                  logoAlt="Logo"
-                  text="Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium."
+                  logoSrc="/images/logo.svg"
+                  logoAlt="Remlyx"
+                  text="We deliver bespoke digital solutions that drive growth and create tangible value for your business."
                 />
                 <SocialWidget />
               </Div>
@@ -68,7 +68,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
               <Div className="cs-footer_item">
                 <Newsletter
                   title="Subscribe"
-                  subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
+                  subtitle="We deliver bespoke digital solutions that drive growth and create tangible value for your business."
                   placeholder="example@gmail.com"
                 />
               </Div>
@@ -80,7 +80,7 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
         <Div className="cs-bottom_footer">
           <Div className="cs-bottom_footer_left">
             <Div className="cs-copyright">
-              Copyright © {`${date}`} Laralink.
+              Copyright © {`${date}`} Remlyx.com.
             </Div>
           </Div>
           <Div className="cs-bottom_footer_right">

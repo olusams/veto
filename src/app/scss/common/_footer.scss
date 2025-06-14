@@ -1,5 +1,32 @@
+.cs-fooer {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/images/video_bg_2.jpeg) no-repeat center center;
+    background-size: cover;
+    z-index: -2;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.9);
+    z-index: -1;
+  }
+}
+
 .cs-fooer_main {
-  padding: 95px 0 35px;
+  padding: 115px 0 70px;
 }
 
 .cs-footer_item {
@@ -57,21 +84,54 @@
 .cs-social_btns.cs-style1 {
   display: flex;
   flex-wrap: wrap;
-  margin: -7px;
   a {
-    height: 36px;
-    width: 36px;
+    display: grid;
+    place-items: center;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
-    border: 2px solid $white;
-    margin: 7px;
-    color: $white;
-    &:hover {
-      border-color: $accent;
-      transform: scale(1.08);
-      svg {
-        fill: $accent;
-      }
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)) padding-box,
+                linear-gradient(to right, #ff4a17, #d6249f, #285aeb) border-box;
+
+    &:not(:last-child) {
+      margin-right: 12px;
     }
+    
+    &:hover {
+      color: #fff !important;
+      transform: scale(1.1);
+      background: var(--brand-color);
+    }
+  }
+
+  .cs-social_btn_facebook {
+    color: #1877f2;
+    --brand-color: #1877f2;
+  }
+  .cs-social_btn_tiktok {
+    color: #00f2ea;
+    --brand-color: #000;
+  }
+  .cs-social_btn_instagram {
+    .iconify {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285aeb 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    --brand-color: #d6249f;
+
+    &:hover .iconify {
+      background: none;
+      -webkit-text-fill-color: #fff;
+    }
+  }
+  .cs-social_btn_github {
+    color: #fff;
+    --brand-color: #171515;
   }
 }
 

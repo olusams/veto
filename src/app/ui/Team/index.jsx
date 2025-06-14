@@ -2,6 +2,7 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import Div from '../Div';
+import Image from 'next/image';
 
 export default function Team({
   memberImage,
@@ -12,7 +13,13 @@ export default function Team({
   return (
     <Div className="cs-team cs-style1">
       <Div className="cs-member_thumb">
-        <img src={memberImage} alt={memberName} />
+        <Image
+          src={memberImage}
+          alt={memberName}
+          height={435}
+          width={330}
+          className="cs-member_image"
+        />
         <Div className="cs-member_overlay" />
       </Div>
       <Div className="cs-member_info">

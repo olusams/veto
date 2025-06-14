@@ -3,117 +3,103 @@ import Cta from "@/app/ui/Cta";
 import Div from "@/app/ui/Div";
 import PageHeading from "@/app/ui/PageHeading";
 import Portfolio from "@/app/ui/Portfolio";
-import SectionHeading from "@/app/ui/SectionHeading";
 import Spacing from "@/app/ui/Spacing";
-import { Icon } from "@iconify/react";
 import { useState } from "react";
 
 const portfolioData = [
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: 'Tkalnia Dywanów',
+    subtitle: 'Photo',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_4.jpeg',
-    category: 'ui_ux_design',
+    src: '/images/1.jpg',
+    category: 'photo',
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: 'Oakfusion',
+    subtitle: 'Design',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_5.jpeg',
-    category: 'logo_design',
+    src: '/images/2.jpg',
+    category: 'design',
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: 'Ride & Travel',
+    subtitle: 'Photo',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_6.jpeg',
-    category: 'web_design',
+    src: '/images/3.jpg',
+    category: 'photo',
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: 'Logo',
+    subtitle: 'Design',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_7.jpeg',
-    category: 'mobile_apps',
+    src: '/images/4.jpg',
+    category: 'design',
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: 'Renner',
+    subtitle: 'Design',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_8.jpeg',
-    category: 'ui_ux_design',
+    src: '/images/5.jpg',
+    category: 'design',
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: '2kul Interior Design',
+    subtitle: 'Branding',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_9.jpeg',
-    category: 'web_design',
+    src: '/images/6.jpg',
+    category: 'branding',
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: 'Typografia',
+    subtitle: 'Photo',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_10.jpeg',
-    category: 'logo_design',
+    src: '/images/7.jpg',
+    category: 'photo',
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: 'Designer Portfolio',
+    subtitle: 'Design',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_4.jpeg',
-    category: 'ui_ux_design',
+    src: '/images/8.jpg',
+    category: 'design',
   },
   {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
+    title: 'Shifting Perspective',
+    subtitle: 'Branding',
     href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_5.jpeg',
-    category: 'logo_design',
-  },
-  {
-    title: 'Colorful Art Work',
-    subtitle: 'See Details',
-    href: '/portfolio/portfolio-details',
-    src: '/images/portfolio_6.jpeg',
-    category: 'web_design',
+    src: '/images/9.jpg',
+    category: 'branding',
   },
 ];
 const categoryMenu = [
   {
-    title: 'Web Design',
-    category: 'web_design',
+    title: 'Branding',
+    category: 'branding',
   },
   {
-    title: 'UI/UX Design',
-    category: 'ui_ux_design',
+    title: 'Design',
+    category: 'design',
   },
   {
-    title: 'Mobile Apps',
-    category: 'mobile_apps',
-  },
-  {
-    title: 'Logo Design',
-    category: 'logo_design',
+    title: 'Photo',
+    category: 'photo',
   },
 ];
 
 export default function PortfolioPage() {
   const [active, setActive] = useState('all');
-  const [itemShow, setItemShow] = useState(7);
+  const [itemShow, setItemShow] = useState(9);
 
   return (
     <>
       <PageHeading
-        title="Portfolio"
+        title="Works"
         bgSrc="/images/portfolio_hero_bg.jpeg"
-        pageLinkText="Portfolio"
+        pageLinkText="Works"
       />
       <Spacing lg="145" md="80" />
       <Div className="container">
         <Div className="cs-portfolio_1_heading">
-          <SectionHeading title="Some recent work" subtitle="Our Portfolio" />
           <Div className="cs-filter_menu cs-style1">
             <ul className="cs-mp0 cs-center">
               <li className={active === 'all' ? 'active' : ''}>
@@ -136,9 +122,7 @@ export default function PortfolioPage() {
         <Div className="row">
           {portfolioData.slice(0, itemShow).map((item, index) => (
             <Div
-              className={`${
-                index === 3 || index === 6 ? 'col-lg-8' : 'col-lg-4'
-              } ${
+              className={`col-lg-4 ${
                 active === 'all'
                   ? ''
                   : !(active === item.category)
@@ -160,28 +144,9 @@ export default function PortfolioPage() {
         </Div>
 
         <Div className="text-center">
-          {portfolioData.length <= itemShow ? (
-            ''
-          ) : (
-            <>
-              <Spacing lg="65" md="40" />
-              <span
-                className="cs-text_btn"
-                onClick={() => setItemShow(itemShow + 3)}
-              >
-                <span>Load More</span>
-                <Icon icon="bi:arrow-right" />
-              </span>
-            </>
-          )}
         </Div>
       </Div>
       <Spacing lg="145" md="80" />
-      <Cta
-        title="agency@arino.com"
-        bgSrc="/images/cta_bg_2.jpeg"
-        variant="rounded-0"
-      />
     </>
   );
 }

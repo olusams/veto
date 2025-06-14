@@ -9,102 +9,98 @@ import TagWidget from '../Widget/TagWidget'
 export default function Sidebar() {
   const tagData = [
     {
-      title: 'Business',
+      title: 'Web Development',
       url:'/'
     },
     {
-      title: 'Agency',
+      title: 'Digital Strategy',
       url:'/'
     },
     {
-      title: 'Artwork',
+      title: 'UI/UX Design',
       url:'/'
     },
     {
-      title: 'Marketing',
+      title: 'eCommerce',
       url:'/'
     },
     {
-      title: 'Information',
+      title: 'Business Growth',
       url:'/'
     },
     {
-      title: 'Design',
+      title: 'Technology',
       url:'/'
     },
     {
-      title: 'Wordpress',
+      title: 'Digital Marketing',
       url:'/'
     },
   ]
   const archiveData = [
     {
-      title: 'Archives',
+      title: 'March 2024',
       url:'/'
     },
     {
-      title: '15 Aug 2022',
+      title: 'February 2024',
       url:'/'
     },
     {
-      title: '20 Sep 2021',
+      title: 'January 2024',
       url:'/'
     },
     {
-      title: '11 Dec 2020',
-      url:'/'
-    },
-    {
-      title: '25 jun 2020',
+      title: 'December 2023',
       url:'/'
     }
   ]
   const categoryData = [
     {
-      title: 'Corporate',
+      title: 'Web Development',
       url:'/'
     },
     {
-      title: 'Company',
+      title: 'Digital Strategy',
       url:'/'
     },
     {
-      title: 'Search Engine',
+      title: 'UI/UX Design',
       url:'/'
     },
     {
-      title: 'Information',
+      title: 'eCommerce',
       url:'/'
     },
     {
-      title: 'Painting',
+      title: 'Business Growth',
       url:'/'
     }
   ]
   const recentPostData = [
     {
-      title: 'How to studio setup...',
-      thumb: '/images/recent_post_1.jpeg',
+      title: 'Digital Transformation: The Key to Business Growth in 2024',
+      thumb: '/images/post_4.jpeg',
       href: '/blog/blog-details',
-      date: '15 Aug 2022'
+      date: 'March 7, 2024'
     },
     {
-      title: 'Creative people mind...',
-      thumb: '/images/recent_post_2.jpeg',
+      title: 'Bespoke Web Development: Creating Custom Solutions for Your Business',
+      thumb: '/images/post_5.jpeg',
       href: '/blog/blog-details',
-      date: '14 Aug 2022'
+      date: 'March 5, 2024'
     },
     {
-      title: 'AI take over human...',
-      thumb: '/images/recent_post_3.jpeg',
+      title: 'The Impact of AI on Modern Business Operations',
+      thumb: '/images/post_6.jpeg',
       href: '/blog/blog-details',
-      date: '13 Aug 2022'
+      date: 'March 4, 2024'
     },
     {
-      title: 'You should now add...',
+      title: 'Optimizing Your Digital Strategy for Maximum ROI',
       thumb: '/images/recent_post_4.jpeg',
       href: '/blog/blog-details',
-      date: '12 Aug 2022'
+      date: 'March 3, 2024'
     },
   ]
   return (
@@ -112,24 +108,24 @@ export default function Sidebar() {
       <Div className="cs-sidebar_item">
         <AuthorWidget 
           src='/images/avatar_1.png'
-          name='Kuber Jontra' 
-          description='At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.'
+          name='Remlyx Digital'
+          description='Based in Leeds, we are a leading digital agency specializing in bespoke web development, UI/UX design, and digital strategy. Our team combines technical expertise with creative innovation to deliver powerful digital solutions that drive business growth and create lasting value for our clients.'
         />
       </Div>
       <Div className="cs-sidebar_item">
-        <SearchWidget title='Search'/>
+        <SearchWidget title='Search Digital Insights'/>
       </Div>
       <Div className="cs-sidebar_item">
         <SideMenuWidget title='Categories' data={categoryData}/>
       </Div>
       <Div className="cs-sidebar_item">
-        <RecentPost title='Archives' data={recentPostData}/>
+        <RecentPost title='Latest Articles' data={recentPostData}/>
       </Div>
       <Div className="cs-sidebar_item">
         <SideMenuWidget title='Archives' data={archiveData}/>
       </Div>
       <Div className="cs-sidebar_item">
-        <TagWidget title='Tags' data={tagData}/>
+        <TagWidget title='Popular Topics' data={tagData}/>
       </Div>
     </>
   )

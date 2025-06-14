@@ -3,24 +3,24 @@ import Div from '../Div';
 
 const partnerLogos = [
   {
-    src: '/images/partner_1.svg',
-    alt: 'Partner',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Nike_logo.svg',
+    alt: 'Nike',
   },
   {
-    src: '/images/partner_2.svg',
-    alt: 'Partner',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/2560px-McDonald%27s_Golden_Arches.svg.png',
+    alt: 'McDonalds',
   },
   {
-    src: '/images/partner_3.svg',
-    alt: 'Partner',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/2560px-Apple_logo_black.svg.png',
+    alt: 'Apple',
   },
   {
-    src: '/images/partner_4.svg',
-    alt: 'Partner',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2560px-Adidas_Logo.svg.png',
+    alt: 'Adidas',
   },
   {
-    src: '/images/partner_5.svg',
-    alt: 'Partner',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/1200px-Wipro_Primary_Logo_Color_RGB.svg.png',
+    alt: 'Wipro',
   },
 ];
 
