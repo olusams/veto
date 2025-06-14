@@ -14,6 +14,10 @@ const heroSocialLinks = [
     name: 'Twitter',
     links: '/',
   },
+  {
+    name: 'Tiktok',
+    links: 'https://www.tiktok.com/@remlyxwebdesign',
+  },
 ];
 
 const showcaseData = [

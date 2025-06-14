@@ -9,7 +9,7 @@ export default function SocialWidget() {
       <Link href='https://www.facebook.com/people/Remlyx/100069426878077/' className="cs-center cs-social_btn_facebook">
         <Icon icon="fa6-brands:facebook-f" />
       </Link>
-      <Link href='/' className="cs-center cs-social_btn_tiktok">
+      <Link href='https://www.tiktok.com/@remlyxwebdesign' className="cs-center cs-social_btn_tiktok">
         <Icon icon="fa6-brands:tiktok" />
       </Link>
       <Link href='/' className="cs-center cs-social_btn_instagram">
