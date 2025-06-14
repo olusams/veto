@@ -30,7 +30,7 @@ const testimonialData = [
     ratings: '5',
   },
   {
-    testimonialThumb: '/images/testimonial_1.jpeg',
+    testimonialThumb: '/images/testimonial_4.jpeg.jpg',
     testimonialText:
       "From start to finish, the Remlyx team was incredible. They took our vision and turned it into a beautiful, functional e-commerce platform that has significantly boosted our sales.",
     avatarName: 'David Lee',

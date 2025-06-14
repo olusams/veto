@@ -17,21 +17,21 @@ const portfolioData = [
   {
     title: 'Oakfusion',
     subtitle: 'Design',
-    href: '/portfolio/portfolio-details',
+    href: '/portfolio/oakfusion',
     src: '/images/2.jpg',
     category: 'design',
   },
   {
     title: 'Ride & Travel',
     subtitle: 'Photo',
-    href: '/portfolio/portfolio-details',
+    href: '/portfolio/ride-travel',
     src: '/images/3.jpg',
     category: 'photo',
   },
   {
     title: 'Logo',
     subtitle: 'Design',
-    href: '/portfolio/portfolio-details',
+    href: '/portfolio/logo',
     src: '/images/4.jpg',
     category: 'design',
   },
@@ -73,7 +73,7 @@ const portfolioData = [
   {
     title: 'Shifting Perspective',
     subtitle: 'Branding',
-    href: '/portfolio/portfolio-details',
+    href: '/portfolio/shifting-perspective',
     src: '/images/9.jpg',
     category: 'branding',
   },
