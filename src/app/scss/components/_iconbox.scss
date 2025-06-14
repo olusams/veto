@@ -1,17 +1,26 @@
 @use '../default/variable' as *;
 
 .cs-iconbox.cs-style1 {
+  padding: 30px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
   max-width: 350px;
   margin: auto;
   .cs-iconbox_icon {
-    margin-bottom: 25px;
-  }
-  .cs-iconbox_title {
-    font-size: 30px;
     margin-bottom: 20px;
   }
+  .cs-iconbox_title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
   .cs-iconbox_subtitle {
-    line-height: 1.75em;
+    margin: 0;
+    line-height: 1.6em;
+  }
+  &:hover {
+    background-color: #1a1a1a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
   }
   @media (max-width: 991px) {
     max-width: 100%;

@@ -6,9 +6,13 @@ export default function VideoModal({ videoSrc, bgUrl, variant }) {
   const [iframeSrc, setIframeSrc] = useState('about:blank');
   const [toggle, setToggle] = useState(false);
   const handelClick = () => {
-    const video = videoSrc.split('?v=')[1].trim();
-    setIframeSrc(`https://www.youtube.com/embed/${video}`);
-    setToggle(!toggle);
+    if (videoSrc.includes('facebook.com')) {
+      window.open(videoSrc, '_blank');
+    } else {
+      const video = videoSrc.split('?v=')[1].trim();
+      setIframeSrc(`https://www.youtube.com/embed/${video}`);
+      setToggle(!toggle);
+    }
   };
   const handelClose = () => {
     setIframeSrc('about:blank');

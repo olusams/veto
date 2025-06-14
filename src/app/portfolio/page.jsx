@@ -8,11 +8,11 @@ import { useState } from "react";
 
 const portfolioData = [
   {
-    title: 'Tkalnia Dywanów',
-    subtitle: 'Photo',
-    href: '/portfolio/portfolio-details',
+    title: 'Drive Pro',
+    subtitle: 'Web Design',
+    href: 'https://elegant-marzipan-58ed22.netlify.app/',
     src: '/images/1.jpg',
-    category: 'photo',
+    category: 'design',
   },
   {
     title: 'Oakfusion',
@@ -38,29 +38,36 @@ const portfolioData = [
   {
     title: 'Renner',
     subtitle: 'Design',
-    href: '/portfolio/portfolio-details',
+    href: 'https://grand-cucurucho-5b21cd.netlify.app/',
     src: '/images/5.jpg',
     category: 'design',
   },
   {
     title: '2kul Interior Design',
     subtitle: 'Branding',
-    href: '/portfolio/portfolio-details',
+    href: 'https://elegant-marzipan-58ed22.netlify.app/',
     src: '/images/6.jpg',
     category: 'branding',
   },
   {
     title: 'Typografia',
     subtitle: 'Photo',
-    href: '/portfolio/portfolio-details',
+    href: 'https://lighthearted-frangollo-a7a4ad.netlify.app/',
     src: '/images/7.jpg',
     category: 'photo',
   },
   {
     title: 'Designer Portfolio',
     subtitle: 'Design',
-    href: '/portfolio/portfolio-details',
+    href: 'https://rad-alpaca-149937.netlify.app/',
     src: '/images/8.jpg',
+    category: 'design',
+  },
+  {
+    title: 'Barber Shop',
+    subtitle: 'Web Design',
+    href: 'https://subtle-gumdrop-0e64a3.netlify.app/',
+    src: '/images/barb.jpg',
     category: 'design',
   },
   {

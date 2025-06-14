@@ -6,15 +6,15 @@ import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
 import Spacing from "@/app/ui/Spacing";
 import Image from "next/image";
-import imgUrl from '../../../../public/images/portfolio_details_1.jpeg'
+import imgUrl from '../../../../public/images/service_img_1.jpeg'
 
 export default function PortfolioDetailsPage() {
   return (
     <>
       <PageHeading 
-        title='Portfolio Details'
+        title='Remlyx Case Study'
         bgSrc='/images/service_hero_bg.jpeg'
-        pageLinkText='PORTFOLIO-DETAILS'
+        pageLinkText='Remlyx'
       />
       <Spacing lg='150' md='80'/>
       <Div className="container">
@@ -23,13 +23,13 @@ export default function PortfolioDetailsPage() {
         <Div className="row">
           <Div className="col-lg-6">
             <SectionHeading 
-              title='Graffiti wall artwork' 
-              subtitle='Creative' 
+              title='Remlyx: AI-Powered Logistics' 
+              subtitle='Web Application' 
             >
               <Spacing lg='40' md='20'/>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium voltire doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              <p>Remlyx approached us with a challenge: to revolutionize their logistics platform using the power of AI. We developed a cutting-edge web application that automates route planning, optimizes delivery schedules, and provides real-time tracking, resulting in a 40% increase in efficiency.</p>
               <Spacing lg='10' md='10'/>
-              <p>Ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.</p>
+              <p>Our solution integrated seamlessly with their existing systems, providing a robust and scalable platform for future growth. The intuitive user interface allows their team to manage complex logistical operations with ease, transforming their business from the ground up.</p>
             </SectionHeading>
           </Div>
           <Div className="col-lg-5 offset-lg-1">
@@ -39,27 +39,27 @@ export default function PortfolioDetailsPage() {
             <Div className="row">
               <Div className="col-6">
                 <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Category:</h3>
-                <p className='cs-m0'>Artwork</p>
+                <p className='cs-m0'>Web Application</p>
                 <Spacing lg='30' md='30'/>
               </Div>
               <Div className="col-6">
                 <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Location:</h3>
-                <p className='cs-m0'>United Kindom</p>
+                <p className='cs-m0'>Leeds, UK</p>
                 <Spacing lg='30' md='30'/>
               </Div>
               <Div className="col-6">
-                <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Software:</h3>
-                <p className='cs-m0'>Adobe Illustrator</p>
+                <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Technology:</h3>
+                <p className='cs-m0'>React, Node.js, AI</p>
                 <Spacing lg='30' md='30'/>
               </Div>
               <Div className="col-6">
                 <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Dated:</h3>
-                <p className='cs-m0'>14-Aug-2022</p>
+                <p className='cs-m0'>25-May-2024</p>
                 <Spacing lg='30' md='30'/>
               </Div>
               <Div className="col-6">
                 <h3 className='cs-accent_color cs-font_22 cs-font_18_sm cs-m0'>Client:</h3>
-                <p className='cs-m0'>Andreo Bowla</p>
+                <p className='cs-m0'>Remlyx Ltd.</p>
                 <Spacing lg='30' md='30'/>
               </Div>
             </Div>
@@ -77,7 +77,7 @@ export default function PortfolioDetailsPage() {
       </Div>
       <Spacing lg='145' md='80'/>
       <Cta 
-        title='agency@arino.com' 
+        title='agency@leeds.com'
         bgSrc='/images/cta_bg_2.jpeg'
         variant='rounded-0'
       />

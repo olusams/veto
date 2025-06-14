@@ -16,6 +16,10 @@ import { Icon } from "@iconify/react";
 
 const heroSocialLinks = [
   {
+    name: 'Facebook',
+    links: 'https://www.facebook.com/people/Remlyx/100069426878077/',
+  },
+  {
     name: 'Behance',
     links: '/',
   },
@@ -121,11 +125,11 @@ export default function FreelancerAgencyHome() {
   return (
     <>
       <Hero8
-        title="We Are Award’s Wining Freelancing Agency"
+        title="We Are Award's Wining Freelancing Agency"
         subtitle="We deliver best problem solving solution for our client and provide
         finest finishing product in present and upcoming future."
         btnLink="/contact"
-        btnText="Let’s talk"
+        btnText="Let's talk"
         socialLinksHeading="Follow Us"
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/hero_bg_5.jpeg"
@@ -252,7 +256,7 @@ export default function FreelancerAgencyHome() {
       {/* Start CTA Section */}
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          title="Let's disscuse make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"

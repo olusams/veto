@@ -86,3 +86,22 @@
     font-size: 56px;
   }
 }
+
+.cs-moving_text_wrap.cs-style1 {
+  background-color: $accent;
+  color: $white;
+  padding: 15px 0;
+  overflow: hidden;
+  .cs-moving_text {
+    animation: moving-text 15s linear infinite;
+  }
+}
+
+@keyframes moving-text {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

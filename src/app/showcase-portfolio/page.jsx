@@ -3,6 +3,10 @@ import Hero6 from "@/app/ui/Hero/Hero6";
 
 const heroSocialLinks = [
   {
+    name: 'Facebook',
+    links: 'https://www.facebook.com/people/Remlyx/100069426878077/',
+  },
+  {
     name: 'Behance',
     links: '/',
   },

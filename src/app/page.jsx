@@ -30,6 +30,10 @@ import aboutImg4 from '../../public/images/about_img_4.jpeg'
 // Hero Social Links
 const heroSocialLinks = [
   {
+    name: 'Facebook',
+    links: 'https://www.facebook.com/people/Remlyx/100069426878077/',
+  },
+  {
     name: 'Behance',
     links: '/',
   },
@@ -202,15 +206,34 @@ export default function Home() {
       {/* End Hero Section */}
 
       {/* Start FunFact Section */}
-      <div className="container">
-        <FunFact
-          variant="cs-type1"
-          title="Proven Results"
-          subtitle="We merge creative innovation with technical mastery to build captivating digital experiences that convert. Our track record speaks for itself."
-          data={funfaceData}
-        />
-      </div>
+      <section className="cs-funfact_section_bg">
+        <div className="cs-funfact_overlay" />
+        <div className="container">
+          <FunFact
+            variant="cs-type1"
+            title="Proven Results"
+            subtitle="We merge creative innovation with technical mastery to build captivating digital experiences that convert. Our track record speaks for itself."
+            data={funfaceData}
+          />
+        </div>
+      </section>
       {/* End FunFact Section */}
+
+      {/* Start Video Block Section */}
+      <Spacing lg="130" md="70" />
+      <Div className="container">
+        <SectionHeading
+          title="Featured Video"
+          subtitle="Our latest work"
+          variant="cs-style1 text-center"
+        />
+        <Spacing lg="90" md="45" />
+        <VideoModal
+          videoSrc="https://www.facebook.com/reel/626618556185236"
+          bgUrl="/images/video_bg.jpeg"
+        />
+      </Div>
+      {/* End Video Block Section */}
 
       {/* Start Service Section */}
       <Div id="service">
@@ -290,21 +313,6 @@ export default function Home() {
         </Div>
       </Div>
       {/* End Portfolio Section */}
-
-      {/* Start Video Block Section */}
-      <Spacing lg="130" md="70" />
-      <Div className="container">
-        <h2 className="cs-font_50 cs-m0 text-center cs-line_height_4">
-          Our agile process is ability to adapt and respond to change. Agile
-          organizations view change as an opportunity, not a threat.
-        </h2>
-        <Spacing lg="70" md="70" />
-        <VideoModal
-          videoSrc="https://www.youtube.com/watch?v=VcaAVWtP48A"
-          bgUrl="/images/video_bg.jpeg"
-        />
-      </Div>
-      {/* End Video Block Section */}
 
       {/* Start Team Section */}
       <Spacing lg="145" md="80" />

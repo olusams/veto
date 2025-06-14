@@ -13,6 +13,10 @@ import Spacing from "@/app/ui/Spacing";
 
 const heroSocialLinks = [
   {
+    name: 'Facebook',
+    links: 'https://www.facebook.com/people/Remlyx/100069426878077/',
+  },
+  {
     name: 'Behance',
     links: '/',
   },
@@ -145,7 +149,7 @@ export default function CreativePortfolioHome() {
       {/* Start CTA Section */}
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          title="Let's disscuse make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg_3.jpeg"

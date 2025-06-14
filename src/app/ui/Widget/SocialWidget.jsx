@@ -6,7 +6,7 @@ import Div from '../Div';
 export default function SocialWidget() {
   return (
     <Div className="cs-social_btns cs-style1">
-      <Link href='/' className="cs-center cs-social_btn_facebook">
+      <Link href='https://www.facebook.com/people/Remlyx/100069426878077/' className="cs-center cs-social_btn_facebook">
         <Icon icon="fa6-brands:facebook-f" />
       </Link>
       <Link href='/' className="cs-center cs-social_btn_tiktok">

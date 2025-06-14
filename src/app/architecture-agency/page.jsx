@@ -63,10 +63,10 @@ export default function ArchitectureAgencyHome() {
   return (
     <>
       <Hero9
-        title="Arino Wheres Vision Meets Structure."
-        subtitle="We deliver best problem solving solution for our client and provide finest <br /> finishing product in present and upcoming future."
+        title="Where Vision Meets Digital Excellence."
+        subtitle="We are a Leeds-based web development agency, crafting bespoke digital solutions that elevate your brand and drive measurable results. From intuitive design to powerful code, we bring your vision to life."
         btnLink="/about"
-        btnText="Load More"
+        btnText="Learn More"
         bgImageUrl="/images/hero_bg_6.jpeg"
         spiningCircleUrl="/images/hero_img_6.svg"
         videoSrc="https://www.youtube.com/watch?v=VcaAVWtP48A"
@@ -77,16 +77,12 @@ export default function ArchitectureAgencyHome() {
         <Div className="row">
           <Div className="col-xl-5 col-lg-7">
             <SectionHeading
-              title="Your trusted partner for business"
+              title="A trusted partner for your digital journey"
               subtitle="About Our Agency"
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+              At our core, we are a team of passionate creators, strategists, and innovators. We believe in building partnerships, not just projects. Our collaborative approach ensures that we understand your unique business challenges and deliver solutions that are not only visually stunning but also strategically sound and engineered for success.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
@@ -130,7 +126,7 @@ export default function ArchitectureAgencyHome() {
           <div className="row">
             <div className="col-lg-5 col-xl-4">
               <SectionHeading
-                title="We provide best value offer"
+                title="Our Comprehensive Web Solutions"
                 subtitle="Services"
                 btnLink="/service"
                 btnText="See All Services"
@@ -140,29 +136,29 @@ export default function ArchitectureAgencyHome() {
             <div className="col-lg-7 offset-xl-1">
               <div className="cs-iconbox_4_wrap">
                 <IconBoxStyle2
-                  title="Interior Design"
-                  subTitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totame."
+                  title="Web & App Development"
+                  subTitle="We build high-performance, scalable websites and applications tailored to your specific business needs, ensuring a seamless user experience across all devices."
                   iconUrl="/images/icons/service_icon_4.svg"
                   btnLink="/service"
                   btnText="Learn More"
                 />
                 <IconBoxStyle2
-                  title="Urban Planning"
-                  subTitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totame."
+                  title="UI/UX & Branding"
+                  subTitle="Our design team creates intuitive interfaces and compelling brand identities that captivate your audience and elevate your digital presence."
                   iconUrl="/images/icons/service_icon_5.svg"
                   btnLink="/service"
                   btnText="Learn More"
                 />
                 <IconBoxStyle2
-                  title="Sustainable Design"
-                  subTitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totame."
+                  title="E-commerce Solutions"
+                  subTitle="We deliver robust e-commerce platforms that drive sales, with a focus on user experience, security, and seamless payment integrations."
                   iconUrl="/images/icons/service_icon_6.svg"
                   btnLink="/service"
                   btnText="Learn More"
                 />
                 <IconBoxStyle2
-                  title="3D Modeling"
-                  subTitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totame."
+                  title="AI & Automation"
+                  subTitle="Leverage the power of AI to automate processes, gain valuable insights, and create intelligent solutions that give you a competitive advantage."
                   iconUrl="/images/icons/service_icon_7.svg"
                   btnLink="/service"
                   btnText="Learn More"
@@ -181,8 +177,8 @@ export default function ArchitectureAgencyHome() {
         <div className="container">
           <FunFact
             variant="cs-type2"
-            title="Our fun fact"
-            subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+            title="Our Fun Facts"
+            subtitle="We are proud of our journey and the milestones we have achieved. Here's a glimpse into our story, reflected in the numbers that define our commitment to excellence and innovation."
             data={funfaceData}
           />
         </div>
@@ -223,7 +219,7 @@ export default function ArchitectureAgencyHome() {
         <Div className="row">
           <Div className="col-lg-6">
             <SectionHeading
-              title="Do you have a project <br/>in your mind?"
+              title="Have a project in mind? <br/>Let's talk."
               subtitle="Getting Touch"
             />
             <Spacing lg="55" md="30" />
@@ -244,12 +240,12 @@ export default function ArchitectureAgencyHome() {
               </Div>
               <Div className="col-sm-6">
                 <label className="cs-primary_color">Project Type*</label>
-                <input type="text" className="cs-form_field" />
+                <input type="text" className="cs-form_field" placeholder="e.g., Web Design" />
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-6">
                 <label className="cs-primary_color">Mobile*</label>
-                <input type="text" className="cs-form_field" />
+                <input type="text" className="cs-form_field" placeholder="+1 (123) 456-7890" />
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-12">

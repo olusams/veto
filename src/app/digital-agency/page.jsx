@@ -17,6 +17,10 @@ import { useState } from "react";
 
 const heroSocialLinks = [
   {
+    name: 'Facebook',
+    links: 'https://www.facebook.com/people/Remlyx/100069426878077/',
+  },
+  {
     name: 'Behance',
     links: '/',
   },
@@ -190,7 +194,7 @@ export default function DigitalAgencyHome() {
           <Div className="row">
             <Div className="col-lg-5 col-xl-4">
               <SectionHeading
-                title="Uk’s best digital agency ever"
+                title="Uk's best digital agency ever"
                 subtitle="Why Choose Us"
                 btnText="Learn More"
                 btnLink="/about"
@@ -326,7 +330,7 @@ export default function DigitalAgencyHome() {
       {/* Start CTA Section */}
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          title="Let's disscuse make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"

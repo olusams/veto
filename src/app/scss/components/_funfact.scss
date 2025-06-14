@@ -67,24 +67,26 @@
   grid-template-columns: repeat(2, 1fr);
 }
 .cs-funfact.cs-style1 {
-  display: flex;
-  align-items: center;
-  .cs-funfact_number {
-    margin: 0 13px 0 0;
-    font-size: 50px;
-    line-height: 1.3em;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
   }
-  .cs-funfact_text {
-    span {
-      font-size: 20px;
-      font-weight: 700;
-      display: block;
-      margin-top: -4px;
-      margin-bottom: -1px;
-    }
-    p {
-      margin: 0;
-    }
+  .cs-funfact_number {
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: $accent;
+  }
+  .cs-funfact_title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5em;
   }
 }
 
@@ -223,5 +225,116 @@
   .cs-funfact_wrap,
   .cs-funfact_wrap_2 {
     padding: 40px 30px;
+  }
+}
+
+.cs-funfact_section_bg {
+  background-image: url(/images/a-magical-and-beautiful-denmark-milkyway-pictures-2025-02-20-03-14-05-utc.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: $white;
+  padding: 60px 0;
+
+  .cs-funfact_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(8, 8, 8, 0.95) 0%,
+      rgba(255, 74, 23, 0.3) 100%
+    );
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .cs-funfact_wrap {
+    background: transparent;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .cs-funfact_heading p {
+    color: $white;
+  }
+
+  .cs-funfact.cs-style1 {
+    background-color: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease, filter 0.4s ease;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      filter: brightness(1.2);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(
+        transparent,
+        rgba(255, 0, 255, 0.8),
+        rgba(0, 255, 255, 0.8),
+        transparent
+      );
+      animation: rgb-wave 4s linear infinite;
+      z-index: -1;
+    }
+
+    .cs-funfact_number {
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .cs-funfact_title {
+      color: $white;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .cs-funfact_wrap.cs-type1 .cs-funfact_shape {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 74, 23, 0.15) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background-size: 100% 100%;
+    animation: none;
+    opacity: 0.6;
+  }
+}
+
+@keyframes gradient-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rgb-wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

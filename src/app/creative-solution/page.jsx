@@ -17,11 +17,10 @@ export default function CreativeSolutionHome() {
   return (
     <>
       <Hero10
-        title="Creative People’s Creative Mind"
-        subtitle="We deliver best problem solving solution for our client and provide
-        finest finishing product in present and upcoming future."
+        title="Where Innovation Meets Intuitive Design"
+        subtitle="We build bespoke digital solutions that empower your business, engage your audience, and drive sustainable growth. Let us transform your vision into a reality."
         btnLink="/portfolio"
-        btnText="See Portfolio"
+        btnText="Explore Our Work"
         // bgImageUrl="/images/hero_bg_6.jpeg"
         // imgUrl="/images/hero_img_1.png"
         shape2Url="/images/hero_img_3.png"
@@ -30,7 +29,7 @@ export default function CreativeSolutionHome() {
       <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading
-          title="Design working process"
+          title="Our Proven Design Process"
           subtitle="UI/UX Design"
           variant="cs-style1 text-center"
         />
@@ -39,24 +38,24 @@ export default function CreativeSolutionHome() {
           <Div className="col-lg-4">
             <IconBox
               icon="/images/icons/service_icon_1.svg"
-              title="Sketching"
-              subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo."
+              title="1. Discovery & Strategy"
+              subtitle="We begin by understanding your business goals, target audience, and project requirements. This phase includes competitive analysis, user research, and strategic planning to lay a solid foundation for the design."
             />
             <Spacing lg="30" md="30" />
           </Div>
           <Div className="col-lg-4">
             <IconBox
               icon="/images/icons/service_icon_2.svg"
-              title="Wireframing"
-              subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo."
+              title="2. Wireframing & Prototyping"
+              subtitle="Next, we create low-fidelity wireframes and interactive prototypes to map out the user flow and information architecture. This allows us to test and refine the user experience before moving into visual design."
             />
             <Spacing lg="30" md="30" />
           </Div>
           <Div className="col-lg-4">
             <IconBox
               icon="/images/icons/service_icon_3.svg"
-              title="Prototyping"
-              subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium also a doloremque laudantium, totam remain beatae vitae dictaro enim ipsam sunt explicabo."
+              title="3. Visual Design & Handoff"
+              subtitle="In the final phase, we bring the design to life with high-fidelity mockups, typography, and color palettes. We then deliver a comprehensive design system and all necessary assets to the development team for a seamless handoff."
             />
             <Spacing lg="30" md="30" />
           </Div>
@@ -88,7 +87,7 @@ export default function CreativeSolutionHome() {
                   competition and allows us to deliver a specialist business
                   consultancy service. Our team applies its wide-ranging
                   experience to determining. Through our years of experience,
-                  we’ve also learned that while each channel. <br />
+                  we've also learned that while each channel. <br />
                   <br />
                   This is the main factor that sets us apart from our
                   competition and allows us to deliver a specialist business
@@ -203,8 +202,8 @@ export default function CreativeSolutionHome() {
         <div className="cs-height_145 cs-height_lg_75" />
         <div className="container">
           <SectionHeading
-            title="Voices of delights testimonials that <br />speak to our excellence"
-            subtitle="Clients Feedback"
+            title="Voices of Delight: Testimonials That Speak to Our Excellence"
+            subtitle="Client Feedback"
             variant="cs-style1 text-center"
           />
           <Spacing lg="90" md="45" />
@@ -215,8 +214,8 @@ export default function CreativeSolutionHome() {
       {/* End Testimonial Section */}
       {/* Start CTA Section */}
       <Cta
-        title="Let’s disscuse make <br />something <i>cool</i> together"
-        btnText="Apply For Meeting"
+        title="Let's discuss how we can build <br />something <i>exceptional</i> together" 
+        btnText='Schedule a Consultation'
         btnLink="/contact"
         bgSrc="/images/cta_bg_5.jpeg"
         variant="cs-type_1"
@@ -231,7 +230,7 @@ export default function CreativeSolutionHome() {
           <Div className="row">
             <Div className="col-xl-4">
               <SectionHeading
-                title="Explore recent publication"
+                title="Explore Our Latest Insights"
                 subtitle="Our Blog"
                 btnText="View More Blog"
                 btnLink="/blog"

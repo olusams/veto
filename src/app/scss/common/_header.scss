@@ -1,10 +1,10 @@
 @use '../default/variable' as *;
 
-.cs-site-branding {
+.cs-site_branding {
   display: inline-block;
-  max-width: 150px;
+  max-width: 300px;
   @media screen and (min-width: 1200px) {
-    max-width: 180px;
+    max-width: 350px;
   }
 }
 .cs-site_header {
@@ -41,8 +41,8 @@
 
 .cs-site_header.cs-style1 {
   &.cs-sticky-active {
-    background-color: $white;
-    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
+    background-color: #1a1a1a;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1);
   }
 
   .cs-icon_btn {
@@ -295,7 +295,7 @@
 }
 .cs-sticky_header_active {
   top: 0px;
-  background-color: #000;
+  background-color: #1a1a1a;
 }
 
 // .cs-gescout_show {
@@ -303,10 +303,11 @@
 //   opacity: 1;
 // }
 
-.cs-site-branding {
+.cs-site_branding {
   display: inline-block;
   img {
-    max-height: 45px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -352,6 +353,7 @@
     font-size: 15px;
     line-height: 1.6em;
     color: $white;
+    transition: all 0.3s ease;
 
     .cs-nav_list {
       display: flex !important;
@@ -416,7 +418,7 @@
         width: 260px;
         background-color: #181818;
         position: absolute;
-        box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
         border-top: 2px solid $accent;
         padding: 10px 0;
         z-index: 100;
@@ -445,6 +447,12 @@
           display: block;
           line-height: inherit;
           padding: 10px 20px;
+          transition: all 0.3s ease;
+          border-radius: 3px;
+          &:hover {
+            background-color: $accent;
+            color: $white;
+          }
         }
 
         ul {
@@ -522,8 +530,8 @@
 }
 
 @media screen and (max-width: 1360px) {
-  .cs-site-branding {
-    max-width: 190px;
+  .cs-site_branding {
+    max-width: 320px;
   }
 }
 
@@ -564,13 +572,13 @@
     .cs-nav_list {
       position: absolute;
       width: 100vw;
-      left: -12px;
+      left: 0;
       background-color: #181818;
-      padding: 10px 0;
+      padding: 10px;
       display: none;
       top: 100%;
-      border-top: 1px solid #4d4d4d52;
-      border-bottom: 1px solid #4d4d4d52;
+      border-top: 1px solid $border;
+      border-bottom: 1px solid $border;
       overflow: auto;
       max-height: calc(100vh - 80px);
       line-height: 1.6em;
@@ -585,7 +593,13 @@
 
       a {
         display: block;
-        padding: 8px 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: $accent;
+          color: $white;
+        }
       }
     }
 
@@ -736,15 +750,14 @@
   }
 }
 @media screen and (max-width: 575px) {
-  .cs-site-branding {
-    max-width: 150px;
+  .cs-site_branding {
+    max-width: 250px;
   }
 
   .cs-hamburger_wrap .cs-hamburger {
     margin-right: 0;
   }
   .cs-site_branding img {
-    max-height: 32px;
   }
   .cs-site_header.cs-style1 .cs-btn {
     span {

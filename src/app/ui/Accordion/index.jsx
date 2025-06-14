@@ -3,29 +3,29 @@ import { useState } from 'react';
 import Div from '../Div';
 const accordionData = [
   {
-    question: 'Do you design illustration website?',
+    question: "What is the typical timeline for a new website project?",
     answer:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      "Our project timelines vary depending on the complexity and scope of the work. A standard informational website typically takes 4-6 weeks from initial consultation to launch. For e-commerce platforms or custom applications, the timeline can extend to 8-12 weeks or more. We provide a detailed project plan with key milestones to keep you informed every step of the way.",
   },
   {
-    question: 'Do you provide design source file after finish work?',
+    question: "Will I be able to update the website myself after it's built?",
     answer:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      "Absolutely. We build all our websites on user-friendly content management systems (CMS) like WordPress or a custom-built React solution with a clear administrative interface. We provide comprehensive training to ensure you can manage content, update images, and make other necessary changes with ease. Ongoing support is also available if you need it.",
   },
   {
-    question: 'How to provide project details and payments?',
+    question: "How do you approach search engine optimization (SEO)?",
     answer:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      "SEO is integral to our development process. We implement on-page SEO best practices from the ground up, including keyword research, content optimization, meta tags, and schema markup. We also ensure your website is technically sound, with fast loading speeds and a mobile-friendly design—all of which are critical ranking factors.",
   },
   {
-    question: 'Can you tell me please how to contact for project?',
+    question: "What are your payment terms?",
     answer:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      "We typically require a 50% deposit to initiate a project, with the remaining balance due upon completion, before the website goes live. For larger projects, we can arrange a milestone-based payment schedule to better suit your budget. We accept various payment methods for your convenience.",
   },
   {
-    question: 'Do you makes custom logo, icon etc?',
+    question: "What kind of ongoing support do you offer after launch?",
     answer:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      "Our commitment to your success extends beyond the launch. We offer a range of support and maintenance packages that include regular updates, security monitoring, performance optimization, and on-demand technical assistance. We're here to ensure your website remains a powerful asset for your business long-term.",
   },
 ];
 

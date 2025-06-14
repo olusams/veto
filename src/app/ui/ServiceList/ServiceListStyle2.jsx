@@ -3,27 +3,27 @@ import Link from 'next/link';
 import Div from '../Div';
 const serviceData = [
   {
-    title: 'WP Development',
+    title: 'Web & App Development',
     subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
+      'We craft bespoke websites and applications that are not only visually stunning but also engineered for performance, scalability, and a seamless user experience.',
     href: '/service/service-details',
   },
   {
-    title: 'UI/UX Design',
+    title: 'UI/UX & Branding',
     subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
+      'Our design team creates intuitive interfaces and memorable brand identities that resonate with your audience and elevate your digital presence.',
     href: '/service/service-details',
   },
   {
-    title: 'Branding',
+    title: 'Digital Marketing',
     subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
+      'We drive growth through data-driven strategies, including SEO, PPC, and content marketing, to increase your visibility and convert leads into loyal customers.',
     href: '/service/service-details',
   },
   {
-    title: 'Social Ad Campaign',
+    title: 'AI & Automation',
     subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem.',
+      'Leverage the power of artificial intelligence to automate processes, gain valuable insights, and create intelligent solutions that give you a competitive edge.',
     href: '/service/service-details',
   },
 ];
