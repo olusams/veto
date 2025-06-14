@@ -1,3 +1,5 @@
+@use '../default/variable' as *;
+
 .cs-row_gap_20 {
   margin-left: -10px;
   margin-right: -10px;
@@ -875,7 +877,6 @@ label {
   position: relative;
   .cs-shape_4 {
     position: absolute;
-    background-color: #000;
     border-radius: 50%;
     &:nth-child(1) {
       left: 5%;
@@ -885,6 +886,11 @@ label {
       animation: animo-y 8s infinite;
     }
     &:nth-child(2) {
+      background-image: url('/images/icons/service_icon_6.svg');
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
       left: 15%;
       top: 62%;
       height: 286px;
