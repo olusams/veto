@@ -6,7 +6,7 @@ import Team from '../Team';
 const teamData = [
   {
     memberImage: '/images/member_1.jpeg',
-    memberName: 'Melon Bulgery',
+    memberName: 'Jemma Bulgery',
     memberDesignation: 'Product Designer',
     memberSocial: {
       linkedin: '/',
@@ -50,8 +50,8 @@ const teamData = [
   },
   {
     memberImage: '/images/testimonial_3.jpeg',
-    memberName: 'Melon Bulgery',
-    memberDesignation: 'Product Designer',
+    memberName: 'Jonathan Taylor',
+    memberDesignation: 'UX/UI Specialist',
     memberSocial: {
       linkedin: '/',
       twitter: '/',

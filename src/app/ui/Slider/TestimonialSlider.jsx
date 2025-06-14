@@ -8,34 +8,34 @@ const testimonialData = [
   {
     testimonialThumb: '/images/testimonial_1.jpeg',
     testimonialText:
-      'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
-    avatarName: 'Ahon Monsery',
-    avatarDesignation: 'CEO AT TECH',
-    ratings: '4',
+      'Remlyx transformed our online presence with a stunning website and a strategic marketing campaign that drove exceptional results. Their team is professional, creative, and a pleasure to work with.',
+    avatarName: 'Sarah Johnson',
+    avatarDesignation: 'CEO, Innovatech',
+    ratings: '5',
   },
   {
     testimonialThumb: '/images/testimonial_2.jpeg',
     testimonialText:
-      'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
-    avatarName: 'Ahon Monsery',
-    avatarDesignation: 'CEO AT TECH',
+      "Working with Remlyx was a game-changer for our business. Their data-driven approach to SEO and content strategy delivered a significant increase in organic traffic and conversions. Highly recommended!",
+    avatarName: 'Michael Chen',
+    avatarDesignation: 'Marketing Director, QuantumLeap',
     ratings: '5',
   },
   {
     testimonialThumb: '/images/testimonial_3.jpeg',
     testimonialText:
-      'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
-    avatarName: 'Ahon Monsery',
-    avatarDesignation: 'CEO AT TECH',
-    ratings: '4.5',
+      'The new mobile app developed by Remlyx has exceeded all our expectations. The UI/UX is flawless, and the performance is outstanding. Their team delivered on time and on budget.',
+    avatarName: 'Jessica Rodriguez',
+    avatarDesignation: 'Product Manager, AppSolutions',
+    ratings: '5',
   },
   {
     testimonialThumb: '/images/testimonial_1.jpeg',
     testimonialText:
-      'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
-    avatarName: 'Ahon Monsery',
-    avatarDesignation: 'CEO AT TECH',
-    ratings: '3.5',
+      "From start to finish, the Remlyx team was incredible. They took our vision and turned it into a beautiful, functional e-commerce platform that has significantly boosted our sales.",
+    avatarName: 'David Lee',
+    avatarDesignation: 'Founder, The Modern Store',
+    ratings: '5',
   },
 ];
 

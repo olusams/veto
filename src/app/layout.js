@@ -22,7 +22,7 @@ export const metadata = {
   description:
     'Professional web designer and developer in Leeds, helping businesses across West Yorkshire with bespoke websites and SEO. Contact Remlyx for a free quote.',
   keywords:
-    'web designer leeds, web developer leeds, web design west yorkshire, freelance web developer leeds, wordpress developer leeds, small business web design leeds',
+    'web designer leeds, web developer leeds, web design west yorkshire, freelance web developer leeds, wordpress developer leeds, small business web design leeds, bespoke web development leeds, mobile app development leeds, seo services leeds',
   author: 'Remlyx',
 };
 
@@ -41,7 +41,7 @@ const jsonLd = {
   telephone: '07448429748',
   url: 'https://www.remlyx.com',
   description:
-    'Professional web designer and developer based in Leeds, serving small and medium businesses across West Yorkshire.',
+    'Remlyx is a professional web design and development agency in Leeds, West Yorkshire, specializing in bespoke websites, mobile apps, and SEO solutions for small and medium-sized businesses.',
   areaServed: [
     {
       '@type': 'City',

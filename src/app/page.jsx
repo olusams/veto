@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import dynamic from 'next/dynamic';
 
 import Cta from '@/app/ui/Cta';
 import Div from '@/app/ui/Div';
@@ -11,16 +12,16 @@ import SectionHeading from '@/app/ui/SectionHeading';
 import Spacing from '@/app/ui/Spacing';
 import Card from './ui/Card';
 import PricingTableList from "@/app/ui/PricingTable/PricingTableList";
-import TestimonialSlider from "@/app/ui/Slider/TestimonialSlider";
+import Sidebar from "@/app/ui/Sidebar.jsx/index.jsx";
+import ContactInfoWidget from "@/app/ui/Widget/ContactInfoWidget";
 import Portfolio from "@/app/ui/Portfolio";
 import Pagination from "@/app/ui/Pagination";
 import PostStyle2 from "@/app/ui/Post/PostStyle2";
-import Sidebar from "@/app/ui/Sidebar.jsx/index.jsx";
-import ContactInfoWidget from "@/app/ui/Widget/ContactInfoWidget";
-import TeamSlider from '@/app/ui/Slider/TeamSlider';
-import PortfolioSlider from "@/app/ui/Slider/PortfolioSlider";
 import VideoModal from "@/app/ui/VideoModal";
 
+const TeamSlider = dynamic(() => import('@/app/ui/Slider/TeamSlider'), { ssr: false });
+const PortfolioSlider = dynamic(() => import('@/app/ui/Slider/PortfolioSlider'), { ssr: false });
+const TestimonialSlider = dynamic(() => import('@/app/ui/Slider/TestimonialSlider'), { ssr: false });
 import aboutImg from '../../public/images/about_img_1.jpeg'
 import aboutImg2 from '../../public/images/about_img_2.jpeg'
 import aboutImg3 from '../../public/images/about_img_3.jpeg'
@@ -260,7 +261,7 @@ export default function Home() {
                     title="Bespoke Web Development"
                     link="/service/service-details"
                     src="/images/service_1.jpeg"
-                    alt="Service"
+                    alt="Bespoke Web Development Service"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
@@ -270,7 +271,7 @@ export default function Home() {
                     title="Mobile App Development"
                     link="/service/service-details"
                     src="/images/service_2.jpeg"
-                    alt="Service"
+                    alt="Mobile App Development Service"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
@@ -279,7 +280,7 @@ export default function Home() {
                     title="SEO & Digital Solutions"
                     link="/service/service-details"
                     src="/images/service_3.jpeg"
-                    alt="Service"
+                    alt="SEO & Digital Solutions Service"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
@@ -289,7 +290,7 @@ export default function Home() {
                     title="Ongoing Support"
                     link="/service/service-details"
                     src="/images/service_4.jpeg"
-                    alt="Service"
+                    alt="Ongoing Support Service"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
@@ -317,6 +318,10 @@ export default function Home() {
         </Div>
       </Div>
       {/* End Portfolio Section */}
+
+      {/* Start Testimonial Section */}
+      <TestimonialSlider />
+      {/* End Testimonial Section */}
 
       {/* Start Team Section */}
       <Spacing lg="145" md="80" />

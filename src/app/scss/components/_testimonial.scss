@@ -1,15 +1,21 @@
 @use '../default/variable' as *;
 
 .cs-testimonial.cs-style1 {
+  background-color: $white;
+  border-radius: 12px;
+  padding: 50px 45px 45px;
   position: relative;
-  padding-left: 70px;
-  padding-top: 70px;
+  border: 1px solid rgba($primary, 0.1);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
   .cs-testimonial_quote {
+    height: 70px;
+    width: 70px;
     position: absolute;
     top: 0;
     left: 1px;
     font-size: 42px;
     color: $primary;
+    margin-bottom: 25px;
   }
   .cs-testimonial_text {
     font-size: 22px;
@@ -40,8 +46,20 @@
     }
   }
 }
+.cs-rating.cs-style1 {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+  svg {
+    color: #ffc107;
+    width: 20px;
+    height: 20px;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+  }
+}
 .cs-testimonial_slider_2 {
   text-align: center;
+  position: relative;
   .cs-testimonial_slider_left {
     margin-left: auto;
     margin-right: auto;

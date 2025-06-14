@@ -14,18 +14,10 @@ export default function Testimonial({
         <Icon icon="fa:quote-left" />
       </Div>
       <Div className="cs-testimonial_text">{testimonialText}</Div>
-      <Div className="cs-rating">
-        <Div
-          className="cs-rating_bg"
-          style={{ backgroundImage: 'url(/images/rating.svg)' }}
-        />
-        <Div
-          className="cs-rating_percentage"
-          style={{
-            backgroundImage: 'url(/images/rating.svg)',
-            width: `${ratings * 20}%`,
-          }}
-        />
+      <Div className="cs-rating cs-style1">
+        {[...Array(5)].map((_, index) => (
+          <Icon icon="fa6-solid:star" key={index} />
+        ))}
       </Div>
       <h2 className="cs-testimonial_avatar_name">{avatarName}</h2>
       <Div className="cs-testimonial_avatar_designation text-uppercase">

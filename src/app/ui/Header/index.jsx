@@ -121,26 +121,28 @@ export default function Header({ variant }) {
           onClick={() => setSideHeaderToggle(!sideHeaderToggle)}
         />
         <Div className="cs-side_header_in">
-          <Div className="cs-side_header_shape" />
-          <Link className="cs-site_branding" href="/">
-            <Image src="/images/footer_logo.svg" alt="Logo" width={200} height={50} />
-          </Link>
-          <Div className="cs-side_header_box">
-            <h2 className="cs-side_header_heading">
-              Do you have a project in your <br /> mind? Keep connect us.
-            </h2>
-          </Div>
-          <Div className="cs-side_header_box">
-            <ContactInfoWidget title="Contact Us" withIcon />
-          </Div>
-          <Div className="cs-side_header_box">
-            <Newsletter
-              title="Subscribe"
-              placeholder="example@gmail.com"
-            />
-          </Div>
-          <Div className="cs-side_header_box">
-            <SocialWidget />
+          <Div className="cs-side_header_in_in">
+            <Div className="cs-side_header_shape" />
+            <Link className="cs-site_branding" href="/">
+              <Image src="/images/footer_logo.svg" alt="Logo" width={200} height={50} />
+            </Link>
+            <Div className="cs-side_header_box">
+              <h2 className="cs-side_header_heading">
+                Do you have a project in your <br /> mind? Keep connect us.
+              </h2>
+            </Div>
+            <Div className="cs-side_header_box">
+              <ContactInfoWidget title="Contact Us" withIcon />
+            </Div>
+            <Div className="cs-side_header_box">
+              <Newsletter
+                title="Subscribe"
+                placeholder="example@gmail.com"
+              />
+            </Div>
+            <Div className="cs-side_header_box">
+              <SocialWidget />
+            </Div>
           </Div>
         </Div>
       </Div>
