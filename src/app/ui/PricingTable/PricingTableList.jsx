@@ -13,7 +13,7 @@ export default function PricingTableList() {
             price='350'
             currency='£'
             timeline='monthly'
-            features={['Bespoke Responsive Website', 'Advanced SEO Foundations', 'Keyword Research', 'Social Media Integration', 'eCommerce Ready', 'Google Analytics Setup']}
+            features={['Bespoke Responsive Website', 'Advanced SEO Foundations', 'Keyword Research', 'Social Media Integration', 'eCommerce Ready']}
             btnText='Select Plan'
             btnLink='/contact'
           />
