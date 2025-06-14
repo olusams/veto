@@ -48,17 +48,6 @@ const teamData = [
       facebook: '/',
     },
   },
-  {
-    memberImage: '/images/testimonial_3.jpeg',
-    memberName: 'Jonathan Taylor',
-    memberDesignation: 'UX/UI Specialist',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
 ];
 
 export default function TeamSlider() {
