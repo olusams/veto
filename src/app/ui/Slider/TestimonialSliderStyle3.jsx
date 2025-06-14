@@ -25,7 +25,7 @@ const testimonialData = [
       'I am thrilled to share my experience with poze software. Their AI solutions have truly revolutionized the way businesses operate. They have set a new standard in the industry. Highly recommended!',
     avatarName: 'Leonel Bolian',
     avatarDesignation: 'Ninja Shop',
-    ratings: '4',
+    ratings: '5',
   },
   {
     avatarImgUrl: '/images/avatar_5.png',
@@ -33,7 +33,7 @@ const testimonialData = [
       'I am thrilled to share my experience with poze software. Their AI solutions have truly revolutionized the way businesses operate. They have set a new standard in the industry. Highly recommended!',
     avatarName: 'Leonel Bolian',
     avatarDesignation: 'Ninja Shop',
-    ratings: '4',
+    ratings: '5',
   },
 ];
 
