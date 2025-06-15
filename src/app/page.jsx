@@ -242,6 +242,79 @@ export default function Home() {
       </Div>
       {/* End Video Block Section */}
 
+      {/* Start Testimonial Section */}
+      <TestimonialSlider />
+      {/* End Testimonial Section */}
+
+      {/* Start Portfolio Section */}
+      <Spacing lg="150" md="50" />
+      <Div id="works">
+        <Div className="container">
+          <SectionHeading
+            title="Featured Projects"
+            subtitle="Our Work"
+            variant="cs-style1 text-center"
+          />
+          <Spacing lg="90" md="45" />
+        </Div>
+        <Div>
+          <PortfolioSlider data={portfolioData} />
+        </Div>
+      </Div>
+      {/* End Portfolio Section */}
+
+      {/* Start Partners Section */}
+      <Spacing lg="145" md="80" />
+      <Div className="container">
+        <SectionHeading
+          title="Our Trusted Partners"
+          variant="cs-style1 text-center"
+        />
+        <Spacing lg="70" md="45" />
+        <LogoList
+          partnerLogos={[
+            {
+              src: '/images/partners/1.svg',
+              alt: 'Partner',
+              name: 'Vertex Solutions',
+              hue: '170',
+            },
+            {
+              src: '/images/partners/2.svg',
+              alt: 'Partner',
+              name: 'Quantum Core',
+              hue: '220',
+            },
+            {
+              src: '/images/partners/3.svg',
+              alt: 'Partner',
+              name: 'Stellar Dynamics',
+              hue: '280',
+            },
+            {
+              src: '/images/partners/4.svg',
+              alt: 'Partner',
+              name: 'Apex Innovations',
+              hue: '340',
+            },
+            {
+              src: '/images/partners/5.svg',
+              alt: 'Partner',
+              name: 'Nexus Enterprises',
+              hue: '40',
+            },
+            {
+              src: '/images/partners/6.svg',
+              alt: 'Partner',
+              name: 'Synergy Group',
+              hue: '90',
+            },
+          ]}
+        />
+      </Div>
+      <Spacing lg="150" md="80" />
+      {/* End Partners Section */}
+
       {/* Start Service Section */}
       <Div id="service">
         <Div className="container">
@@ -304,27 +377,6 @@ export default function Home() {
       </Div>
       {/* End Service Section */}
 
-      {/* Start Portfolio Section */}
-      <Spacing lg="150" md="50" />
-      <Div id="works">
-        <Div className="container">
-          <SectionHeading
-            title="Featured Projects"
-            subtitle="Our Work"
-            variant="cs-style1 text-center"
-          />
-          <Spacing lg="90" md="45" />
-        </Div>
-        <Div>
-          <PortfolioSlider data={portfolioData} />
-        </Div>
-      </Div>
-      {/* End Portfolio Section */}
-
-      {/* Start Testimonial Section */}
-      <TestimonialSlider />
-      {/* End Testimonial Section */}
-
       {/* Start Google Reviews Section */}
       <Spacing lg="125" md="70" />
       <Div className="container">
@@ -341,20 +393,6 @@ export default function Home() {
       </Div>
       <Spacing lg="125" md="70" />
       {/* End Google Reviews Section */}
-
-      {/* Start LogoList Section */}
-      <Div className="container">
-        <SectionHeading
-          title="Our trusted partners"
-          subtitle="Partners"
-          variant="cs-style1 text-center"
-        />
-        <Spacing lg="70" md="45" />
-        <LogoList />
-      </Div>
-      <Spacing lg="70" md="45" />
-      <MovingText text="Our reputed world wide partners" />
-      {/* End LogoList Section */}
 
       {/* Start CTA Section */}
       <Spacing lg="150" md="80" />

@@ -163,7 +163,44 @@ export default function MarketingAgencyHome() {
 
       {/* Start LogoList Section */}
       <Div className="container">
-        <LogoList />
+        <LogoList partnerLogos={[
+          {
+            src: '/images/partners/1.svg',
+            alt: 'Partner',
+            name: 'Vertex Solutions',
+            hue: '170',
+          },
+          {
+            src: '/images/partners/2.svg',
+            alt: 'Partner',
+            name: 'Quantum Core',
+            hue: '220',
+          },
+          {
+            src: '/images/partners/3.svg',
+            alt: 'Partner',
+            name: 'Stellar Dynamics',
+            hue: '280',
+          },
+          {
+            src: '/images/partners/4.svg',
+            alt: 'Partner',
+            name: 'Apex Innovations',
+            hue: '340',
+          },
+          {
+            src: '/images/partners/5.svg',
+            alt: 'Partner',
+            name: 'Nexus Enterprises',
+            hue: '40',
+          },
+          {
+            src: '/images/partners/6.svg',
+            alt: 'Partner',
+            name: 'Synergy Group',
+            hue: '90',
+          },
+        ]} />
       </Div>
       <Spacing lg="130" md="80" />
       {/* End LogoList Section */}
