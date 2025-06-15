@@ -11,6 +11,12 @@
     object-fit: contain;
   }
 }
+.cs-partner_logo_large {
+  img {
+    width: 150px;
+    max-height: 65px;
+  }
+}
 @media screen and (max-width: 575px) {
   .cs-partner_logo_wrap {
     margin: 0 -10px;
