@@ -342,24 +342,6 @@ export default function Home() {
       <Spacing lg="125" md="70" />
       {/* End Google Reviews Section */}
 
-      {/* Start Moving Text Section */}
-      <MovingText text="Our reputed world wide partners" />
-      {/* End Moving Text Section */}
-
-      {/* Start Team Section */}
-      <Spacing lg="145" md="80" />
-      <Div className="container">
-        <SectionHeading
-          title="Awesome team <br/>members"
-          subtitle="Our Team"
-          variant="cs-style1"
-        />
-        <Spacing lg="85" md="45" />
-        <TeamSlider />
-      </Div>
-      <Spacing lg="150" md="80" />
-      {/* End Team Section */}
-
       {/* Start LogoList Section */}
       <Div className="container">
         <SectionHeading
@@ -370,6 +352,8 @@ export default function Home() {
         <Spacing lg="70" md="45" />
         <LogoList />
       </Div>
+      <Spacing lg="70" md="45" />
+      <MovingText text="Our reputed world wide partners" />
       {/* End LogoList Section */}
 
       {/* Start CTA Section */}
