@@ -18,6 +18,8 @@ import Portfolio from "@/app/ui/Portfolio";
 import Pagination from "@/app/ui/Pagination";
 import PostStyle2 from "@/app/ui/Post/PostStyle2";
 import VideoModal from "@/app/ui/VideoModal";
+import LogoList from "@/app/ui/LogoList";
+import MovingText from "@/app/ui/MovingText";
 
 const TeamSlider = dynamic(() => import('@/app/ui/Slider/TeamSlider'), { ssr: false });
 const PortfolioSlider = dynamic(() => import('@/app/ui/Slider/PortfolioSlider'), { ssr: false });
@@ -323,6 +325,27 @@ export default function Home() {
       <TestimonialSlider />
       {/* End Testimonial Section */}
 
+      {/* Start Google Reviews Section */}
+      <Spacing lg="125" md="70" />
+      <Div className="container">
+        <SectionHeading
+          title="What Our Clients Say"
+          subtitle="Testimonials"
+          variant="cs-style1 text-center"
+        />
+        <Spacing lg="90" md="45" />
+        <div
+          className="elfsight-app-a7f38c29-1348-4975-b4ea-910ba8890229"
+          data-elfsight-app-lazy
+        ></div>
+      </Div>
+      <Spacing lg="125" md="70" />
+      {/* End Google Reviews Section */}
+
+      {/* Start Moving Text Section */}
+      <MovingText text="Our reputed world wide partners" />
+      {/* End Moving Text Section */}
+
       {/* Start Team Section */}
       <Spacing lg="145" md="80" />
       <Div className="container">
@@ -336,6 +359,18 @@ export default function Home() {
       </Div>
       <Spacing lg="150" md="80" />
       {/* End Team Section */}
+
+      {/* Start LogoList Section */}
+      <Div className="container">
+        <SectionHeading
+          title="Our trusted partners"
+          subtitle="Partners"
+          variant="cs-style1 text-center"
+        />
+        <Spacing lg="70" md="45" />
+        <LogoList />
+      </Div>
+      {/* End LogoList Section */}
 
       {/* Start CTA Section */}
       <Spacing lg="150" md="80" />
